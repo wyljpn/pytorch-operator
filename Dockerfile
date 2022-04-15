@@ -1,4 +1,5 @@
-FROM golang:1.13 AS build-image
+#FROM golang:1.13 AS build-image
+FROM klstg-docker.slb-wartifactory-v.stg.rmn.local/rakuten/rflow/rflow-go:1.17 AS build-image
 
 ADD . /go/src/github.com/kubeflow/pytorch-operator
 
